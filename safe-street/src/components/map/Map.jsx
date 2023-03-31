@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import { Icon } from "@iconify/react";
@@ -36,3 +37,8 @@ function MapSection(props) {
 export default MapSection
 
 
+=======
+import React from 'react'
+import GoogleMapReact from 'google-map-react'
+import './map.css'
+>>>>>>> 9dbb835 (map appearing on the app)
