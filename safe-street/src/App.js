@@ -4,7 +4,11 @@ import response from "./data/response.json";
 function App() {
   function getCrimes() {
     return response.map(function (item) {
-      return item.location;
+      return {
+        lat: item.location.latitude,
+        long: item.location.longitude,
+        street: item.location.street.name,
+      };
     });
   }
 
