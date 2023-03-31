@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import response from "./data/response.json";
 function App() {
+  function getCrimes() {
+    return response.map(function (item) {
+      return item.location;
+    });
+  }
+
+  // log to see results
+  console.log(getCrimes());
+
   return (
     <div className="App">
       <header className="App-header">
