@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MapSection from "./components/map/Map.jsx"; // import the map here
+
+const location = {
+  crime: "Crime type",
+  lat: 37.42216,
+  lng: -122.08427,
+}; // our location object from earlier
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MapSection location={location} zoomLevel={17} /> {/* include it here */}
     </div>
   );
 }
